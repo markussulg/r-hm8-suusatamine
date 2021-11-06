@@ -1,2 +1,2 @@
-# r-hm8-suusatamine
+# Suusk Veebileht
 Sissejuhatus erialasse (LTAT.03.002) veebilehe rühmatöö
