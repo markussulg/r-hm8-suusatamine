@@ -1,28 +1,14 @@
-h1 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-li {
-    margin: 10px 0px;
-}
-img {
-    width: 100%;
-    height: auto;
-}
 .video {
   padding: 50px;
   display: block;
   margin: 0 auto;
-  background-color: rgba(10, 12, 24, 0.267);
-}
-
-.esipilt {
-  position: relative;
-  text-align: center;
-  color: white;
 }
 .esipildi_tekst {
-  font-size: 36px;
+  font-size: 40px;
+}
+.esipilt{
+  position: relative;
+  color: white;
 }
 .maakonnad ol{
   padding: 0;
@@ -31,23 +17,24 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
 }
-/* Centered text */
+.maakonnad a {
+  color: #444;
+}
+.maakonnad a:hover {
+  color: white;
+}
+.info {
+  text-align: center;
+  padding: 50px;
+  margin: 0px;
+}
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.info {
-  text-align: center;
-  padding: 50px;
-  background-color: rgba(10, 12, 24, 0.267);
-
-}
-
 /* Start of https://www.w3schools.com/howto/howto_js_collapsible.asp */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -58,9 +45,9 @@ img {
     padding: 18px;
     width: 200px;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
     border-radius: 50px;
   }
   
@@ -79,7 +66,5 @@ img {
     background-color: #f1f1f1;
     border-radius: 50px;
     text-align: left;
-
-
   }
   /* End of https://www.w3schools.com/howto/howto_js_collapsible.asp */
