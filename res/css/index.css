@@ -1,0 +1,17 @@
+.kolm_pilti {
+    display: flex;
+    margin-top: 10%;
+
+}
+.aluspilt {
+    width: 100%;
+    margin: 2%;
+}
+.aluspildi_tekst {
+    color: rgb(126, 182, 255);
+}
+@media only screen and (max-width: 900px) {
+    .kolm_pilti {
+        display: block;
+    }
+  }
