@@ -1,7 +1,14 @@
-.video {
-  padding: 50px;
+iframe {
+  border: 0px;
+  height: 600px; 
+  width: 1200px;
   display: block;
   margin: 0 auto;
+  padding: 50px;
+  margin: 0 auto;
+}
+.video {
+  margin-top: 50px;
 }
 .maakonnad ol{
   padding: 0;
