@@ -23,7 +23,7 @@ img {
   margin: 0px;
   padding: 0px;
 }
-.secondary_backround {
+.secondary_background {
   background-color: rgba(10, 12, 24, 0.267);
 }
 a {
@@ -38,4 +38,16 @@ p {
 }
 ::selection { 
   background: black;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aluspildi_tekst {
+  font-size: 40px;
+}
+.aluspilt{
+  position: relative;
 }
