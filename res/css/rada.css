@@ -1,5 +1,6 @@
 h1 {
-    color: rgb(217, 230, 184);
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 li {
     margin: 10px 0px;
@@ -9,10 +10,45 @@ img {
     height: auto;
 }
 .video {
- width: 100%;
- height: 600px;
+  padding: 50px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(10, 12, 24, 0.267);
 }
-/* https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+.esipilt {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.esipildi_tekst {
+  font-size: 36px;
+}
+.maakonnad ol{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(10, 12, 24, 0.267);
+
+}
+
+/* Start of https://www.w3schools.com/howto/howto_js_collapsible.asp */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     margin-left: 5px;
@@ -42,32 +78,8 @@ img {
     color: black;
     background-color: #f1f1f1;
     border-radius: 50px;
+    text-align: left;
+
 
   }
-  /* Container holding the image and the text */
-.image_with_text {
-    position: relative;
-    text-align: center;
-    color: white;
-
-}
-.image_text {
-    font-size: 36px;
-}
-.maakonnad{
-    display: inline-block;
-    width: 100%;
-}
-.maakonnad ul {
-    width: 30%;
-}
-.maakonnad img {
-    width: 50%;
-}
-  /* Centered text */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  /* End of https://www.w3schools.com/howto/howto_js_collapsible.asp */
