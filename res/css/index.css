@@ -6,10 +6,14 @@
 .aluspilt {
     width: 100%;
     margin: 2%;
+    padding-bottom: 50px;
 }
 .aluspildi_tekst {
-    color: rgb(126, 182, 255);
+    font-size: 60px;
 }
+.centered {
+    top: 97%;
+  }
 @media only screen and (max-width: 900px) {
     .kolm_pilti {
         display: block;
