@@ -66,9 +66,10 @@ p {
   background: linear-gradient(white, white);
   border-radius: 50%;
   filter: drop-shadow(0 0 5px white);
+  z-index: 2;
 }
-.snow{
-  display: none;
+#snow{
+  max-height: 500px;
 }
 
 /* The navigation bar */
