@@ -2,14 +2,14 @@
 
 let snowflakes_count = 200;
 
-// let base_css = ``; // Put your custom base css here
+// baas css = ``; // Isikustatud css
 
 if (typeof total !== 'undefined'){
     snowflakes_count = total;
 }
 
 
-// This function allows you to turn on and off the snow
+// Lume sisse ja välja vajutamine
 function toggle_snow() {
     let check_box = document.getElementById("toggle_snow");
     if (check_box.checked == true) {
@@ -20,7 +20,7 @@ function toggle_snow() {
     }
 }
 
-// Creating snowflakes
+// Loob lumehelbekesed
 function spawn_snow(snow_density = 200) {
     snow_density -= 1;
 
@@ -32,17 +32,17 @@ function spawn_snow(snow_density = 200) {
     }
 }
 
-// Append style for each snowflake to the head
+// Lumehelveste stiil
 function add_css(rule) {
     let css = document.createElement('style');
     css.type = 'text/css';
-    css.appendChild(document.createTextNode(rule)); // Support for the rest
+    css.appendChild(document.createTextNode(rule)); // toetus teistele
     document.getElementsByTagName("head")[0].appendChild(css);
 }
 
 
 
-// Math
+// Arvutused
 function random_int(value = 100){
     return Math.floor(Math.random() * value) + 1;
 }
@@ -54,7 +54,7 @@ function random_range(min, max) {
 }
 
 
-// Create style for snowflake
+// Oma stiili loomine lumehelvestele
 function spawnSnowCSS(snow_density = 200){
     let snowflake_name = "snowflake";
     let rule = ``;
@@ -97,10 +97,8 @@ function spawnSnowCSS(snow_density = 200){
     add_css(rule);
 }
 
-// Load the rules and execute after the DOM loads
+// Laadige reeglid ja käivitage pärast DOM-i laadimist
 window.onload = function() {
     spawnSnowCSS(snowflakes_count);
     spawn_snow(snowflakes_count);
 };
-
-// TODO add progress bar for slower clients
