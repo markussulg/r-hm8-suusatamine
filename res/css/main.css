@@ -52,3 +52,17 @@ p {
 .aluspilt{
   position: relative;
 }
+.third_background {
+  background-color: rgba(0, 38, 255, 0.267);
+}
+.snowflake {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: linear-gradient(white, white);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 5px white);
+}
+.snow{
+  display: none;
+}
