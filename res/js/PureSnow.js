@@ -3,7 +3,6 @@
 let snowflakes_count = 200;
 
 // baas css = ``; // Isikustatud css
-
 if (typeof total !== 'undefined'){
     snowflakes_count = total;
 }
@@ -11,7 +10,9 @@ if (typeof total !== 'undefined'){
 
 // Lume sisse ja välja vajutamine
 function toggle_snow() {
+    // leia objekt ID-ga toggle_snow
     let check_box = document.getElementById("toggle_snow");
+    // kui lund ei ole näha, siis näita. Muidu kui näitab lund, lõpeta lume näitamine.
     if (check_box.checked == true) {
         document.getElementById('snow').style.display = "block";
     }
@@ -20,10 +21,10 @@ function toggle_snow() {
     }
 }
 
-// Loob lumehelbekesed
+// Loob lumehelbekesed, lumehelvekeste arv = snow_density
 function spawn_snow(snow_density = 200) {
     snow_density -= 1;
-
+    // loob objektid klassinimega "snowflake", lisab kõik need elemendid objekti ID-ga "snow" alla
     for (let x = 0; x < snow_density; x++) {
         let board = document.createElement('div');
         board.className = "snowflake";
@@ -46,7 +47,7 @@ function add_css(rule) {
 function random_int(value = 100){
     return Math.floor(Math.random() * value) + 1;
 }
-
+// Leiab random arvu min ja max vahel
 function random_range(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -61,7 +62,7 @@ function spawnSnowCSS(snow_density = 200){
     if (typeof base_css !== 'undefined'){
         rule = base_css;
     }
-    
+    // iga lumehelbekese positsioonid, nähtavus
     for(let i = 1; i < snow_density; i++){
         let random_x = Math.random() * 100; // vw
         let random_offset = random_range(-100000, 100000) * 0.0001; // vw;
